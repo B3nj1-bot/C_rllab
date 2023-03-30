@@ -131,6 +131,78 @@ src/fast:
 	cd /Users/KevinChang/Documents/nsa/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/build
 .PHONY : src/fast
 
+LayerPowered.o: LayerPowered.cpp.o
+.PHONY : LayerPowered.o
+
+# target to build an object file
+LayerPowered.cpp.o:
+	cd /Users/KevinChang/Documents/nsa/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/LayerPowered.cpp.o
+.PHONY : LayerPowered.cpp.o
+
+LayerPowered.i: LayerPowered.cpp.i
+.PHONY : LayerPowered.i
+
+# target to preprocess a source file
+LayerPowered.cpp.i:
+	cd /Users/KevinChang/Documents/nsa/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/LayerPowered.cpp.i
+.PHONY : LayerPowered.cpp.i
+
+LayerPowered.s: LayerPowered.cpp.s
+.PHONY : LayerPowered.s
+
+# target to generate assembly for a file
+LayerPowered.cpp.s:
+	cd /Users/KevinChang/Documents/nsa/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/LayerPowered.cpp.s
+.PHONY : LayerPowered.cpp.s
+
+NormalizedEnv.o: NormalizedEnv.cpp.o
+.PHONY : NormalizedEnv.o
+
+# target to build an object file
+NormalizedEnv.cpp.o:
+	cd /Users/KevinChang/Documents/nsa/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/NormalizedEnv.cpp.o
+.PHONY : NormalizedEnv.cpp.o
+
+NormalizedEnv.i: NormalizedEnv.cpp.i
+.PHONY : NormalizedEnv.i
+
+# target to preprocess a source file
+NormalizedEnv.cpp.i:
+	cd /Users/KevinChang/Documents/nsa/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/NormalizedEnv.cpp.i
+.PHONY : NormalizedEnv.cpp.i
+
+NormalizedEnv.s: NormalizedEnv.cpp.s
+.PHONY : NormalizedEnv.s
+
+# target to generate assembly for a file
+NormalizedEnv.cpp.s:
+	cd /Users/KevinChang/Documents/nsa/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/NormalizedEnv.cpp.s
+.PHONY : NormalizedEnv.cpp.s
+
+Parameterized.o: Parameterized.cpp.o
+.PHONY : Parameterized.o
+
+# target to build an object file
+Parameterized.cpp.o:
+	cd /Users/KevinChang/Documents/nsa/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/Parameterized.cpp.o
+.PHONY : Parameterized.cpp.o
+
+Parameterized.i: Parameterized.cpp.i
+.PHONY : Parameterized.i
+
+# target to preprocess a source file
+Parameterized.cpp.i:
+	cd /Users/KevinChang/Documents/nsa/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/Parameterized.cpp.i
+.PHONY : Parameterized.cpp.i
+
+Parameterized.s: Parameterized.cpp.s
+.PHONY : Parameterized.s
+
+# target to generate assembly for a file
+Parameterized.cpp.s:
+	cd /Users/KevinChang/Documents/nsa/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/Parameterized.cpp.s
+.PHONY : Parameterized.cpp.s
+
 SimpleReplayPool.o: SimpleReplayPool.cpp.o
 .PHONY : SimpleReplayPool.o
 
@@ -164,6 +236,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... src"
+	@echo "... LayerPowered.o"
+	@echo "... LayerPowered.i"
+	@echo "... LayerPowered.s"
+	@echo "... NormalizedEnv.o"
+	@echo "... NormalizedEnv.i"
+	@echo "... NormalizedEnv.s"
+	@echo "... Parameterized.o"
+	@echo "... Parameterized.i"
+	@echo "... Parameterized.s"
 	@echo "... SimpleReplayPool.o"
 	@echo "... SimpleReplayPool.i"
 	@echo "... SimpleReplayPool.s"

@@ -5,6 +5,9 @@ cmake_policy(SET CMP0009 NEW)
 # src_sources at src/CMakeLists.txt:5 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/Users/KevinChang/Documents/nsa/src/*.cpp")
 set(OLD_GLOB
+  "/Users/KevinChang/Documents/nsa/src/LayerPowered.cpp"
+  "/Users/KevinChang/Documents/nsa/src/NormalizedEnv.cpp"
+  "/Users/KevinChang/Documents/nsa/src/Parameterized.cpp"
   "/Users/KevinChang/Documents/nsa/src/SimpleReplayPool.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")

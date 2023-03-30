@@ -1,4 +1,6 @@
+#pragma once
 #include "Space.h"
+//Source: https://gitlab.engr.illinois.edu/jundayu2/nsa-nfm/-/blob/master/src/rllab/rllab/envs/env_spec.py
 class EnvSpec  {
     public:
         EnvSpec(Space *observation_space, Space *action_space): observation_space_(observation_space), action_space_(action_space) {};

@@ -1,2 +1,2 @@
-/Library/Developer/CommandLineTools/usr/bin/ar qc libsrc.a CMakeFiles/src.dir/SimpleReplayPool.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ar qc libsrc.a CMakeFiles/src.dir/LayerPowered.cpp.o CMakeFiles/src.dir/NormalizedEnv.cpp.o CMakeFiles/src.dir/Parameterized.cpp.o CMakeFiles/src.dir/SimpleReplayPool.cpp.o
 /Library/Developer/CommandLineTools/usr/bin/ranlib libsrc.a

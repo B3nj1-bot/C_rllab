@@ -1,3 +1,4 @@
+#pragma once
 #include "EnvSpec.h"
 #include "Placeholder.h"
 #include <string>
@@ -14,10 +15,11 @@ class Env  {
 
     public:
         struct Step {
-            Placeholder observation;
-            float reward;
+            torch::Tensor observation;
+            double reward;
             bool done;
             std::map<std::string, std::string> info;
+            Step(const torch::Tensor& obser, double rew, bool don, const std::map<std::string, std::string>& inf): observation(obser), reward(rew), done(don), info(inf) {}
         };
         // Run one timestep of the environment's dynamics. When end of episode
         // is reached, reset() should be called to reset the environment's internal state.
@@ -27,18 +29,21 @@ class Env  {
         // Outputs
         // -------
         // (observation, reward, done, info)
-        // observation : agent's observation of the current environment
-        // reward [Float] : amount of reward due to the previous action
+        // observation : agent's observation of the current environment, probably tensor
+        // reward [double] : amount of reward due to the previous action
         // done : a boolean, indicating whether the episode has ended
         // info : a dictionary containing other diagnostic information from the previous action
 
-        virtual Step step(Placeholder action); //most likely torch::tensor? 
+        virtual Step step(const torch::Tensor& action); //most likely torch::tensor? 
 
         // Resets the state of the environment, returning an initial observation.
         // Outputs, will be same type as the type of observations
         // -------
         // observation : the initial observation of the space. (Initial reward is assumed to be 0.)
-        virtual Placeholder reset();
+        virtual torch::Tensor reset(const torch::Tensor &state = torch::empty(0));
+
+        //added for sanitize_action in NormalizedEnv
+        virtual torch::Tensor sanitize_action(const torch::Tensor& action);
 
         //returns action space
         virtual Space* action_space();
@@ -46,12 +51,15 @@ class Env  {
         //returns observation space
         virtual Space* observation_space();
 
+        //return current state
+        virtual torch::Tensor get_state();
+
         std::size_t action_dim() {
             return (*action_space()).flat_dim();
         }
         void render() {}
         //Placeholder should be the type of whatever a path is
-        void log_diagnostics(std::vector<Placeholder> paths) {}
+        void log_diagnostics(const std::vector<Placeholder>& paths) {}
         EnvSpec spec() {
             return EnvSpec(observation_space(), action_space());
         }
@@ -67,9 +75,5 @@ class Env  {
             return Placeholder();
         }
         void set_param_values(Placeholder params) {}
-
-        
-    
-        
         
 };
