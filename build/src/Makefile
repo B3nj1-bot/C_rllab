@@ -131,6 +131,30 @@ src/fast:
 	cd /Users/KevinChang/Documents/nsa/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/build
 .PHONY : src/fast
 
+DeterministicMLPPolicy.o: DeterministicMLPPolicy.cpp.o
+.PHONY : DeterministicMLPPolicy.o
+
+# target to build an object file
+DeterministicMLPPolicy.cpp.o:
+	cd /Users/KevinChang/Documents/nsa/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/DeterministicMLPPolicy.cpp.o
+.PHONY : DeterministicMLPPolicy.cpp.o
+
+DeterministicMLPPolicy.i: DeterministicMLPPolicy.cpp.i
+.PHONY : DeterministicMLPPolicy.i
+
+# target to preprocess a source file
+DeterministicMLPPolicy.cpp.i:
+	cd /Users/KevinChang/Documents/nsa/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/DeterministicMLPPolicy.cpp.i
+.PHONY : DeterministicMLPPolicy.cpp.i
+
+DeterministicMLPPolicy.s: DeterministicMLPPolicy.cpp.s
+.PHONY : DeterministicMLPPolicy.s
+
+# target to generate assembly for a file
+DeterministicMLPPolicy.cpp.s:
+	cd /Users/KevinChang/Documents/nsa/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/DeterministicMLPPolicy.cpp.s
+.PHONY : DeterministicMLPPolicy.cpp.s
+
 LayerPowered.o: LayerPowered.cpp.o
 .PHONY : LayerPowered.o
 
@@ -236,6 +260,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... src"
+	@echo "... DeterministicMLPPolicy.o"
+	@echo "... DeterministicMLPPolicy.i"
+	@echo "... DeterministicMLPPolicy.s"
 	@echo "... LayerPowered.o"
 	@echo "... LayerPowered.i"
 	@echo "... LayerPowered.s"

@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/src.dir/DeterministicMLPPolicy.cpp.o"
+  "CMakeFiles/src.dir/DeterministicMLPPolicy.cpp.o.d"
   "CMakeFiles/src.dir/LayerPowered.cpp.o"
   "CMakeFiles/src.dir/LayerPowered.cpp.o.d"
   "CMakeFiles/src.dir/NormalizedEnv.cpp.o"

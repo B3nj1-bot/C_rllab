@@ -4606,17 +4606,27 @@ CMakeFiles/ddpg.dir/entry/ddpg.cpp.o: /Users/KevinChang/Documents/nsa/entry/ddpg
   /Users/KevinChang/Documents/nsa/src/DDPG.h \
   /Users/KevinChang/Documents/nsa/src/SimpleReplayPool.h \
   /Users/KevinChang/Documents/nsa/src/Placeholder.h \
+  /Users/KevinChang/Documents/nsa/src/DeterministicMLPPolicy.h \
+  /Users/KevinChang/Documents/nsa/src/Policy.h \
+  /Users/KevinChang/Documents/nsa/src/EnvSpec.h \
+  /Users/KevinChang/Documents/nsa/src/Space.h \
+  /Users/KevinChang/Documents/nsa/src/Parameterized.h \
+  /Users/KevinChang/Documents/nsa/src/LayerPowered.h \
   /Users/KevinChang/Documents/nsa/src/NormalizedEnv.h \
   /Users/KevinChang/Documents/nsa/src/ProxyEnv.h \
   /Users/KevinChang/Documents/nsa/src/Env.h \
-  /Users/KevinChang/Documents/nsa/src/EnvSpec.h \
-  /Users/KevinChang/Documents/nsa/src/Space.h \
   /Users/KevinChang/Documents/nsa/src/Box.h
 
 
+/Users/KevinChang/Documents/nsa/src/Env.h:
+
+/Users/KevinChang/Documents/nsa/src/LayerPowered.h:
+
+/Users/KevinChang/Documents/nsa/src/Parameterized.h:
+
 /Users/KevinChang/Documents/nsa/src/EnvSpec.h:
 
-/Users/KevinChang/Documents/nsa/src/Env.h:
+/Users/KevinChang/Documents/nsa/src/DeterministicMLPPolicy.h:
 
 /Users/KevinChang/Documents/nsa/src/DDPG.h:
 
@@ -13421,6 +13431,8 @@ CMakeFiles/ddpg.dir/entry/ddpg.cpp.o: /Users/KevinChang/Documents/nsa/entry/ddpg
 /Users/KevinChang/opt/anaconda3/lib/python3.9/site-packages/torch/include/ATen/ops/as_strided.h:
 
 /Users/KevinChang/opt/anaconda3/lib/python3.9/site-packages/torch/include/ATen/ops/_upsample_nearest_exact1d_backward.h:
+
+/Users/KevinChang/Documents/nsa/src/Policy.h:
 
 /Users/KevinChang/opt/anaconda3/lib/python3.9/site-packages/torch/include/ATen/ops/detach_native.h:
 
