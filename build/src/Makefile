@@ -131,6 +131,30 @@ src/fast:
 	cd /Users/KevinChang/Documents/nsa/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/build
 .PHONY : src/fast
 
+ContinuousMLPQFunction.o: ContinuousMLPQFunction.cpp.o
+.PHONY : ContinuousMLPQFunction.o
+
+# target to build an object file
+ContinuousMLPQFunction.cpp.o:
+	cd /Users/KevinChang/Documents/nsa/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/ContinuousMLPQFunction.cpp.o
+.PHONY : ContinuousMLPQFunction.cpp.o
+
+ContinuousMLPQFunction.i: ContinuousMLPQFunction.cpp.i
+.PHONY : ContinuousMLPQFunction.i
+
+# target to preprocess a source file
+ContinuousMLPQFunction.cpp.i:
+	cd /Users/KevinChang/Documents/nsa/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/ContinuousMLPQFunction.cpp.i
+.PHONY : ContinuousMLPQFunction.cpp.i
+
+ContinuousMLPQFunction.s: ContinuousMLPQFunction.cpp.s
+.PHONY : ContinuousMLPQFunction.s
+
+# target to generate assembly for a file
+ContinuousMLPQFunction.cpp.s:
+	cd /Users/KevinChang/Documents/nsa/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/ContinuousMLPQFunction.cpp.s
+.PHONY : ContinuousMLPQFunction.cpp.s
+
 DeterministicMLPPolicy.o: DeterministicMLPPolicy.cpp.o
 .PHONY : DeterministicMLPPolicy.o
 
@@ -260,6 +284,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... src"
+	@echo "... ContinuousMLPQFunction.o"
+	@echo "... ContinuousMLPQFunction.i"
+	@echo "... ContinuousMLPQFunction.s"
 	@echo "... DeterministicMLPPolicy.o"
 	@echo "... DeterministicMLPPolicy.i"
 	@echo "... DeterministicMLPPolicy.s"

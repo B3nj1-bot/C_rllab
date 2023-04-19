@@ -16,7 +16,7 @@ DeterministicMLPPolicy::DeterministicMLPPolicy(EnvSpec env_spec, const std::vect
     
 
     //maybe convolutional?
-    torch::nn::Linear l_obs = torch::nn::Linear(env_spec_.observation_space()->flat_dim(), hidden_sizes[0]);
+    torch::nn::Linear l_obs(torch::nn::LinearOptions(env_spec.observation_space()->flat_dim(), hidden_sizes[0]).bias(false));
     if (bn) {
         //maybe not 3d
         layers = torch::nn::Sequential(torch::nn::BatchNorm3d(env_spec_.observation_space()->flat_dim()), l_obs);
